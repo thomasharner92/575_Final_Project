@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Swipe Layers</title>
+
+		<!--put your external stylesheet links here-->
+        <!--<link rel="stylesheet" href="https://mapzen.com/js/mapzen.standalone.css">
+        <link rel="stylesheet" href="css/leaflet.css">-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
+        <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="css/style.css">
+		
+
+
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+    </head>
+
+	<body>
+		<!--put your initial page content here-->
+        <div class = "header">
+        <h1>Comparing Open-source and Authoritative GIS Data </h1>
+        <h3>Differences in data coverage for counties in Virginia</h3></div>
+        <div id ='osmLabel' class='header'>OpenStreetMap</div>
+        <div id ='govtLabel' class='header'>County Government</div>
+        <div id='osm' class='map'>
+            <div id='legend' class='map'>
+            <b>Features</b>
+        </div></div>
+        <div id='govt' class='map'>
+        <div id='legend2' class='map'>
+            <b>Features</b>
+        </div></div>
+        <button id='flyAlexandria'>Alexandria</button>
+        <button id='flyHenrico'>Henrico</button>
+        <button id='flyLynchburg'>Lynchburg</button>
+        <button id='changeBasemap'>View Imagery</button>
+        <div class = "chart-container">
+        <canvas id="bar-chartcanvas"></canvas>
+        </div>
+		<!--you can also use this space for internal scripts or stylesheets;
+		place these within <script> or <style> tags-->
+		<!--put your external script links here-->
+        <script type="text/javascript" src="lib/jquery-3.1.1.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js'></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+
