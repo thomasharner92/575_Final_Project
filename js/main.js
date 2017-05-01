@@ -16,15 +16,13 @@ var LynchburgProp = [579/32491.0,18/37.0,3538/4574.0,53/92.0];
 
 var chart = null;
 
-// global chart canvas variable
-// var ctx = $("#bar-chartcanvas");
 
 
 // Format to percentages with 2 decimal places
 for (i = 0; i < AlexandriaProp.length; i++){
-    AlexandriaProp[i] = parseFloat(Math.round(AlexandriaProp[i] * 100)/100).toFixed(2);
-    HenricoProp[i] = parseFloat(Math.round(HenricoProp[i] * 100)/100).toFixed(2);
-    LynchburgProp[i] = parseFloat(Math.round(LynchburgProp[i] * 100)/100).toFixed(2);
+    AlexandriaProp[i] = parseFloat(Math.round(AlexandriaProp[i] * 100)).toFixed(2);
+    HenricoProp[i] = parseFloat(Math.round(HenricoProp[i] * 100)).toFixed(2);
+    LynchburgProp[i] = parseFloat(Math.round(LynchburgProp[i] * 100)).toFixed(2);
     
 };
 
